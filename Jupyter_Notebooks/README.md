@@ -27,3 +27,7 @@ Note_Assimilation_2: Merged together necessary CSV files to select for patients 
 Full_Text_Proc: This notebook consists of the same preprocessing and steps as the Note_Assimilation_2 but includes all documents in the Notes csv file instead of the first 1000. CSV file with completed processing including stemming and lemmetizing can be found in the data folder as Full_Text_Processed.csv (data file is too large to upload)
 
 HistoryN_Processed: This notebook was used to select for specific areas within the text of the notes. Regular expressions were used to select for only the history section of the patient (This includes: present illnesses, past history, social history and family history)
+
+Word_Frequency: Count the number of occurances for each word found in the corpus. Looks at top frequency words and words that only occur once throughout.
+
+Abbrev_Dictionary: Futher processing to allow for the analysis of only abbreviations, medication names and misspellings within the corpus. This process involved tagging all the words by the part of speech and then lemmatizing based on part of speech (initial lemmatization was only done using the verbs). All stop words and only word that is found within the NLTK words dictionary is removed. Count the number of occurances for each word/abbreviation found in the corpus. Looks at top frequency words/abbr and words/abbr that only occur once throughout.
