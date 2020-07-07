@@ -35,7 +35,7 @@ Note_Assimilation_(newest version): Merged together necessary CSV files to selec
 
 Full_Text_Proc_(newest version): This notebook consists of the same preprocessing and steps as the Note_Assimilation_2 but includes all documents in the Notes csv file instead of the first 1000. CSV file with completed processing including stemming and lemmetizing can be found in the data folder as Full_Text_Processed.csv (data file is too large to upload). End of this notebook includes validation testing (not complete yet) to see what topics and probabities match those set by the trained LDA model to subject found with other diagnoses. 
 
-HistoryN_Processed_(newest_version): This notebook was used to select for specific areas within the text of the notes. Regular expressions were used to select for only the history section of the patient (This includes: present illnesses, past history, social history and family history)
+HistoryN_Processed_(newest_version): This notebook was used to select for specific areas within the text of the notes. Regular expressions were used to select for only the history section of the patient (This includes: present illnesses, past history, social history and family history). Additional visualization of the topics and how groups and individual subjects fall under these LDA topics.
 
 Word_Frequency: Count the number of occurances for each word found in the corpus. Looks at top frequency words and words that only occur once throughout.
 
@@ -44,3 +44,5 @@ Abbrev_Dictionary: Futher processing to allow for the analysis of only abbreviat
 Sklearn_tfidf: This notebook looks at a different Python package called Scikit-learn that allowed me to just run a TF-IDF on the words within the corpus without first creating a dictionary or BOW. (Please see sklearn_tfidf.py full in source code folder) Looking visually at these weights there is no clear indication for a cut off as all words progressively decrease approaching zero. This comparison of weights is based on all dictionary words not including stop words.
 
 NED_Gensim: This notebook looks at the Python package called Gensim again, that runs the TF-IDF on the words within the corpus with a dictionary or BOW (different from Sklearn). Top weighted words have been identified using only abbreviations, medical terminology and misspellings
+
+LDA_Subject: Uses trained LDA model for visualization of the topics as well as visualization of individual subjects and what topics they have a probability of falling under. Suicide attempts and diabetes as a whole is then analyzed to see if LDA model is a good indicator of high risk patients.
