@@ -46,3 +46,7 @@ Sklearn_tfidf: This notebook looks at a different Python package called Scikit-l
 NED_Gensim: This notebook looks at the Python package called Gensim again, that runs the TF-IDF on the words within the corpus with a dictionary or BOW (different from Sklearn). Top weighted words have been identified using only abbreviations, medical terminology and misspellings
 
 LDA_Subject: Uses trained LDA model for visualization of the topics as well as visualization of individual subjects and what topics they have a probability of falling under. Suicide attempts and diabetes as a whole is then analyzed to see if LDA model is a good indicator of high risk patients.
+
+Race_Gender_LDA: Uses discharge history notes to evaluate the topics produced by LDA for male and female DoD patients. Additional processing for race in diabetes patients can be ran.
+
+Suicide_NotesJohn: Uses sample suicide notes from suicide patients to evaluate what topics are produced by LDA model. Ran using various alterations to the LDA model.
