@@ -30,6 +30,7 @@ Minor steps in other notebooks:
 - Matplotlib
 - pyLDAvis
 
+Notebooks were updated as I added and changed things. Please refer to the latest/newest version of each notebook for most recent and accurate data processing.
 
 Note_Assimilation_(newest version): Merged together necessary CSV files to select for patients between the ages of 18-89 with the diagnosis codes known as "Diseases of despair". Completed preprocessing on the notes (removing special characters etc. leaving behind \W+ and lower casing all of the words). First 1000 documents are then lemmetized and stemmed. They are then converted to a dictionary, processed as a BOW, and ran through the LDA topic modeling with or without TF-IDF values. It should be noted that in the notebook, only 1000 documents are fully processed for quicker results (please see additional notebook for all entries). CSV file with output of first preprocessing without stemming or lemmetizing can be found in the data folder as Text_Processed.csv
 
